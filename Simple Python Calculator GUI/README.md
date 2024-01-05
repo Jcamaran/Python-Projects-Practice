@@ -25,8 +25,6 @@ Using enumerate:
 - It provides both the index and value during iteration.
 - Helps dynamically place operator buttons in the GUI based on the index.
 
-a simple calculator program I created using Python and the tkinter library. Let's dive in and see what this calculator can do.
-
 Calculator Features:
 
 Basic arithmetic operations: addition, subtraction, multiplication, and division.
