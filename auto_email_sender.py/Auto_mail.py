@@ -6,6 +6,8 @@ from email.mime.application im'
 password_key = ''  #where you would enter your app passcode given by gmail
 my_resume_file = "" # enter the directory to your file 
 
+my_email = ''#enter your email
+email_recipient = ''# 
 
 # SMTP Server and port no for Gmail.com
 gmail_server = "smtp.gmail.com"
@@ -21,7 +23,7 @@ my_server.login(my_email, password_key)
 # Create email message
 message = MIMEMultipart()
 message["From"] = my_email
-message["To"] = email_recepient  
+message["To"] = email_recipient  
 message["Subject"] = "Test Email"
 
 # Plain text and HTML version of the message 
@@ -41,7 +43,7 @@ with open( my_resume_file, 'rb') as f:
 # Send email
 my_server.sendmail(
     from_addr=my_email,
-    to_addrs=email_recepient,
+    to_addrs=email_recipient,
     msg=message.as_string()  # Use message.as_string() here
 )
 
